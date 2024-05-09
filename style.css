@@ -27,22 +27,26 @@ h2 {
   line-height: 2.3;
   font-family: "Roboto", sans-serif;
   color: var(--secondary-color);
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
   font-size: 30px;
 }
 
-button {
+a {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   display: block;
   margin: 100px auto;
   font-size: 22px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Molengo", sans-serif;
   font-weight: 300;
   padding: 26px 30px;
-  border-radius: 18px;
+  border-radius: 20px;
   border: 0.5 solid var(--secondary-color);
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  letter-spacing: 0.8px;
 }
 
 .hero {
@@ -64,7 +68,7 @@ button {
     margin-top: 10px;
   }
 
-  button {
+  a {
     margin: 80px auto;
   }
 }
