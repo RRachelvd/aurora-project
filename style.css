@@ -98,6 +98,44 @@ main {
   text-align: left;
 }
 
+.songs-section {
+  padding: 100px 40px;
+}
+
+.songs-section h2 {
+  font-weight: 300;
+  font-size: 34px;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding-top: 30px;
+}
+
+.embed {
+  width: 100px;
+  aspect-ratio: 19/12;
+}
+
+.songs {
+  border: 0.5px solid var(--accent-color);
+  border-radius: 6px;
+  text-align: center;
+  background-color: var(--accent-color);
+}
+
+.card {
+  text-align: center;
+  color: #334157;
+  font-family: "Molengo", sans-serif;
+
+  padding: 20px;
+}
+
 .footer-columns {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
