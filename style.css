@@ -51,7 +51,8 @@ a {
 
 .hero {
   padding: 300px 30px 340px 30px;
-  background-image: url(media/aurora-hero.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(media/aurora-hero.png);
   background-position: bottom;
   background-size: cover;
   height: 120px;
