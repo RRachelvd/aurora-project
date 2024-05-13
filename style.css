@@ -117,15 +117,17 @@ main {
 }
 
 .embed {
-  width: 100px;
-  aspect-ratio: 19/12;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+  aspect-ratio: 19/11;
 }
 
 .songs {
-  border: 0.5px solid var(--accent-color);
   border-radius: 6px;
   text-align: center;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
 }
 
 .card {
