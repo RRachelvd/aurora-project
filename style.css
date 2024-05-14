@@ -301,7 +301,7 @@ main {
   font-size: 16px;
   text-align: left;
   font-family: "Molengo", sans-serif;
-  text-decoration: none;
+
   display: inline;
   line-height: 1.5;
   font-size: 15px;
@@ -317,6 +317,7 @@ main {
 }
 .footer-columns li {
   list-style-type: none;
+  margin: 3px 0;
 }
 
 .footer-columns p {
