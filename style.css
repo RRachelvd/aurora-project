@@ -73,7 +73,7 @@ hr {
 
 .hero {
   padding: 300px 30px 340px 30px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url(media/aurora-hero.png);
   background-position: bottom;
   background-size: cover;
@@ -89,7 +89,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  padding-bottom: 80px;
+  padding: 30px 60px 40px 60px;
+  border: 0.5px solid var(--accent-color);
+  border-radius: 12px;
+  margin-bottom: 80px;
+  background-color: var(--accent-color);
 }
 
 .info-columns img {
@@ -99,7 +103,7 @@ main {
 }
 
 .info-columns p {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 2px auto;
   font-size: 16px;
   text-align: left;
@@ -118,6 +122,21 @@ main {
   font-family: "Roboto";
   text-align: left;
   font-weight: 400;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.info-columns .subtitle h5 {
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 0;
+  line-height: 2.3;
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .songs-section {
@@ -309,9 +328,19 @@ main {
   }
 
   .info-columns p,
-  .info-columns h2 {
+  .info-columns h2,
+  .info-columns .subtitle h5 {
     text-align: center;
     padding: 0px 20px;
+  }
+
+  .info-columns h2 {
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .info-columns .subtitle h5 {
+    padding-bottom: 0;
   }
 
   .info-columns img {
@@ -366,13 +395,14 @@ main {
   }
 
   .info-columns h2 {
-    margin-top: 35px;
+    margin-top: 5px;
   }
 
   .info-columns img {
     text-align: center;
     display: block;
     margin: 15px auto;
+    width: 400px;
   }
 
   .songs-section {
@@ -405,7 +435,7 @@ main {
     text-align: center;
     display: block;
     margin: 15px auto;
-    width: 500px;
+    width: 400px;
   }
   .songs-section {
     padding: 140px 10px 40px 10px;
@@ -435,7 +465,7 @@ main {
   }
 
   .info-columns p {
-    padding: 0px;
+    padding: 20px;
     margin: 0;
   }
 
