@@ -116,6 +116,7 @@ main {
   margin: 20px;
   border-radius: 12px;
   padding: 6px;
+  filter: contrast(80%);
 }
 
 .info-columns p {
