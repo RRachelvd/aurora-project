@@ -89,14 +89,13 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 
 .info-columns img {
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 6px;
-  border: 0.5px solid var(--secondary-color);
 }
 
 .info-columns p {
@@ -191,7 +190,7 @@ main {
 }
 
 .songs {
-  border-radius: 6px;
+  border-radius: 12px;
   text-align: center;
   background-color: var(--secondary-color);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
@@ -214,6 +213,7 @@ main {
 
 .part-3 {
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .part-3 h2 {
