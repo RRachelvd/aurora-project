@@ -422,6 +422,10 @@ main {
   .songs-section {
     padding-top: 170px;
   }
+
+  .clip-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 800px) {
