@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #334157;
+  --primary-color: #273243;
   --secondary-color: #ede5e9;
   --tertiary-color: #932d1b;
   --accent-color: #c2c0bd;
@@ -33,6 +33,11 @@ h2 {
   font-size: 30px;
 }
 
+hr {
+  margin-top: 25px;
+  background-color: var(--accent-color);
+}
+
 .button a {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
@@ -47,6 +52,22 @@ h2 {
   text-decoration: none;
   text-align: center;
   width: 130px;
+  letter-spacing: 0.8px;
+}
+
+.small-button a {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  display: block;
+  margin: 35px 30px 25px 30px;
+  font-size: 18px;
+  font-family: "Molengo", sans-serif;
+  font-weight: 300;
+  padding: 23px 27px;
+  border-radius: 20px;
+  border: 0.5 solid var(--secondary-color);
+  text-decoration: none;
+  text-align: center;
   letter-spacing: 0.8px;
 }
 
@@ -104,9 +125,42 @@ main {
 
 .songs-section h2 {
   font-weight: 300;
-  font-size: 34px;
+  font-size: 38px;
   font-family: "Roboto";
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.songs-section .subtitle h5 {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 0;
+  line-height: 2.3;
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-color);
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.songs-section h3 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.songs-section h4 {
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.songs-section p {
+  margin-top: 10px;
+  text-align: left;
 }
 
 .songs-grid {
@@ -128,6 +182,7 @@ main {
   border-radius: 6px;
   text-align: center;
   background-color: var(--secondary-color);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card {
@@ -135,7 +190,7 @@ main {
   color: #334157;
   font-family: "Molengo", sans-serif;
 
-  padding: 20px;
+  padding: 12px 30px;
 }
 
 .footer-columns {
@@ -204,6 +259,7 @@ main {
   }
   .info-columns {
     grid-template-columns: 1fr;
+    padding-bottom: 60px;
   }
 
   .info-columns p,
@@ -216,6 +272,14 @@ main {
     text-align: center;
     display: block;
     margin: 15px auto;
+  }
+
+  .songs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .songs {
+    margin-top: 25px;
   }
 }
 
@@ -238,6 +302,7 @@ main {
   }
   .info-columns {
     grid-template-columns: 1fr;
+    grid-gap: 0px;
   }
 
   .info-columns p,
@@ -246,10 +311,18 @@ main {
     padding: 0px 20px;
   }
 
+  .info-columns h2 {
+    margin-top: 35px;
+  }
+
   .info-columns img {
     text-align: center;
     display: block;
     margin: 15px auto;
+  }
+
+  .songs-section {
+    padding-top: 170px;
   }
 }
 
@@ -265,6 +338,7 @@ main {
 
   .info-columns {
     grid-template-columns: 1fr;
+    grid-gap: 0px;
   }
 
   .info-columns p,
@@ -277,10 +351,14 @@ main {
     text-align: center;
     display: block;
     margin: 15px auto;
+    width: 500px;
+  }
+  .songs-section {
+    padding: 140px 10px 40px 10px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
   h1 {
     font-size: 70px;
   }
@@ -289,8 +367,13 @@ main {
   }
 
   .info-columns {
-    padding: 0;
+    padding: 30px 10px;
     margin: 0;
+    grid-gap: 0px;
+  }
+
+  .info-columns h2 {
+    font-size: 30px;
   }
 
   .info-columns p {
@@ -301,5 +384,13 @@ main {
   main {
     padding: 15px 30px;
     margin-bottom: 35px;
+  }
+
+  .songs-section {
+    padding: 140px 10px 40px 10px;
+  }
+
+  .songs-section h2 {
+    font-size: 30px;
   }
 }
